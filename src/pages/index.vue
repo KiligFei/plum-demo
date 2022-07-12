@@ -2,7 +2,7 @@
 const el = $ref<HTMLCanvasElement>()
 const ctx = $computed(() => el!.getContext('2d')!)
 
-interface Point{
+interface Point {
   x: number
   y: number
 }
@@ -24,10 +24,10 @@ function draw() {
 }
 
 
-function lineTo(p1:Point, p2:Point) {
+function lineTo(p1: Point, p2: Point) {
   ctx.beginPath()
-  ctx.moveTo(p1.x,p1.y)
-  ctx.lineTo(p2.x,p2.y)
+  ctx.moveTo(p1.x, p1.y)
+  ctx.lineTo(p2.x, p2.y)
   ctx.stroke()
 }
 
@@ -85,7 +85,7 @@ function startFrame() {
 startFrame()
 
 
-onMounted(()=>{
+onMounted(() => {
   draw()
 })
 
