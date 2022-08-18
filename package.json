@@ -1,5 +1,6 @@
 {
   "private": true,
+  "packageManager": "pnpm@7.4.0",
   "scripts": {
     "build": "vite build",
     "dev": "vite --port 3333 --open",
@@ -7,9 +8,6 @@
     "preview": "vite preview",
     "test": "vitest",
     "typecheck": "vue-tsc --noEmit"
-  },
-  "eslintConfig": {
-    "extends": "@antfu"
   },
   "dependencies": {
     "@vueuse/core": "^8.7.5",
@@ -35,5 +33,7 @@
     "vitest": "^0.16.0",
     "vue-tsc": "^0.38.2"
   },
-  "packageManager": "pnpm@7.4.0"
+  "eslintConfig": {
+    "extends": "@antfu"
+  }
 }

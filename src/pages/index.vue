@@ -13,7 +13,6 @@ interface Branch {
   theta: number
 }
 
-
 function draw() {
   ctx.strokeStyle = 'rgba(156,163,175,0.5)'
   step({
@@ -22,7 +21,6 @@ function draw() {
     theta: Math.PI / 4,
   })
 }
-
 
 function lineTo(p1: Point, p2: Point) {
   ctx.beginPath()
@@ -84,13 +82,11 @@ function startFrame() {
 }
 startFrame()
 
-
 onMounted(() => {
   draw()
 })
-
 </script>
 
 <template>
-  <canvas border border-gray ref="el" width="600" height="600" m-a></canvas>
+  <canvas ref="el" border border-gray width="600" height="600" m-a />
 </template>
